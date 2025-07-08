@@ -2,21 +2,21 @@
 // Get the display element
   const display = document.getElementById("display");
 
-  // This function adds input (numbers/operators) to the display
+  // adds input (numbers/operators) 
   function appendToDisplay(input) {
     display.value += input;
   }
 
-  // This function clears the display
+  //  clear display
   function clearDisplay() {
     display.value = "";
   }
 
-  // This function evaluates the expression on display and shows the result
+  //evaluates the expression on display/ shows the result
   function calculate() {
     try {
-      display.value = eval(display.value); // Evaluates the string expression
+      display.value = eval(display.value); 
     } catch (error) {
-      display.value = "Error"; // If expression is invalid
+      display.value = "Error"; 
     }
   }
